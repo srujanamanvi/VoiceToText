@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cd5b45"
+    tools:context="com.example.srujana.voicetotext.VTFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/vtbg1"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignBottom="@+id/VTresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="Tap on Mic to Speak"
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:textColor="#ffff66"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignStart="@+id/sms" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:textColor="#ffff66"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER PHONE NUMBER"
+        android:id="@+id/textView3"
+        android:textColor="#ffff66"
+        android:layout_below="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER THE EMAIL ADDRESS"
+        android:id="@+id/textView4"
+        android:textColor="#ffff66"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/sendemail"
+        android:textColor="#ffff66"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND SMS"
+        android:id="@+id/sms"
+        android:background="#ff6633"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toEndOf="@+id/imageButton" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND EMAIL"
+        android:id="@+id/email"
+        android:background="#ff6633"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/sms" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VTresult"
+        android:hint="Speech converted to text"
+        android:textColorHint="#ffff66"
+        android:textColor="#ffff66"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/vtt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/imageButton" />
+
+</RelativeLayout>
