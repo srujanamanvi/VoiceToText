@@ -4,7 +4,9 @@ This is an android application which converts speech to text and the text can fu
 
 The project contains the following main files:
 
-1. AndroidManifest.xml : This is a basic Manifest file along with required permissions.
+1. AndroidManifest.xml : This is a basic Manifest file. It presents essential information 
+                         about the app to the Android system,  information the system must have before it can
+                         run any of the app's code.
 
 2. MainActivity.java: This file is the basic MainActivity. Additionally, it contains code to check if 
                       required permission has access granted. If not, then make request to grant permission.
